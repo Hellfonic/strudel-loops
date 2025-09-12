@@ -14,9 +14,9 @@ p1: n("0 2 4 6 7 6 4 2")
   .gain(0.3)
   ._scope();
 
-p2: "<a1 e2 g2>/4"
+p2: "<a4 e5 g5>/4"
   .clip(0.8)
-  .struct("x*2 o*8")
+  .struct("1*2 1*8")
   .s("supersaw").note()
   .delay(1).delaytime(1).delayfeedback(.45)
   .room(.75).roomsize(5)
@@ -24,7 +24,7 @@ p2: "<a1 e2 g2>/4"
 
 p3: "<e2 a2 c3>/4"
   .clip(0.5)
-  .struct("<x*4 x*8 x*16>")
+  .struct("<1*4 1*8 1*16>")
   .s("square").pw(".75 .5 1")
   .s("saw").note()
   .distort(.5)
